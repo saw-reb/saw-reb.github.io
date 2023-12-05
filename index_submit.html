@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link href="css/style_submit.css" rel="stylesheet" type="text/css"/>
+    <title>Submit Your Ideas</title>
+    <link rel="icon" type="image/x-icon" href="css/images/favicon.ico">
+</head>
+<body>
+    <div id="header">
+        <h1><a id="headlink" href="index_home.html">CHARACTER ARCHIVE</a></h1>
+    </div>
+    <div id="container">
+        <div id="main">
+            <h2>Got an idea for a character? Share it here!</h2>
+                <form name="myForm" action="submit.php" onsubmit="return validateForm()" method="post">
+                    <label for="name">Your Name:</label><br>
+                    <input type="text" name="name"><br><br>
+
+                    <label for="char_name">Character Name:</label><br>
+                    <input type="text" name="char_name"><br><br>
+
+                    <label for="class_race">Character Race and Class(es):</label><br>
+                    <input type="text" name="class_race"><br><br>
+
+                    <label for="details">Other Details:</label><br>
+                    <textarea name="details" id="details" cols="30" rows="5"></textarea><br><br>
+
+                    <input type="submit" value="Submit">
+                </form>
+                <script>
+                    function validateForm() {
+                    let x = document.forms["myForm"]["name"].value;
+                    if (x == "") {
+                    alert("Whoops, looks like you're missing some information! Please fill out any missing sections.");
+                    return false;
+                    }
+                }
+                </script>
+                <script>
+                    function validateForm() {
+                    let x = document.forms["myForm"]["char_name"].value;
+                    if (x == "") {
+                    alert("Whoops, looks like you're missing some information! Please fill out any missing sections.");
+                    return false;
+                    }
+                }
+                </script>
+                <script>
+                    function validateForm() {
+                    let x = document.forms["myForm"]["class_race"].value;
+                    if (x == "") {
+                    alert("Whoops, looks like you're missing some information! Please fill out any missing sections.");
+                    return false;
+                    }
+                }
+                </script>
+                <script>
+                    function validateForm() {
+                    let x = document.forms["myForm"]["details"].value;
+                    if (x == "") {
+                    alert("Whoops, looks like you're missing some information! Please fill out any missing sections.");
+                    return false;
+                    }
+                }
+                </script>
+        </div>
+        <div id="image">
+            <div id="poses"><img src="css/images/poses.png" alt="poses"/></div>
+        </div>
+    </div>
+</body>
+</html>

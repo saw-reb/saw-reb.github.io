@@ -1,0 +1,1 @@
+Thank you for your submission! Your ideas are appreciated. Please hit the "back" button in your browser to return to the submission page.
